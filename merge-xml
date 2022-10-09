@@ -1,3 +1,46 @@
+Merge 2 files and sum corresponding elements - Cumbrian technique
+
+David Carlisle
+
+problem.
+
+Two xml files
+
+file 1
+```xml
+<fa>
+  <a name="a1">3</a>
+  <a name="a2">5</a>
+  <a name="a3">2</a>
+  <a name="new">1</a>
+</fa>
+```
+
+file 2
+```xml
+<fb>
+  <a name="a1">1</a>
+
+  <a name="a3">1</a>
+  <a name="a4">2</a>
+</fb>
+```xml
+
+required output
+
+```xml
+<res>
+   <a name="a1">4</a>
+  <a name="a2">5</a>
+  <a name="a3">3</a>
+  <a name="a4">2</a>
+  <a name="new">1</a>
+</res>
+```
+
+I.e. I want to sum the corresponding elements to the output file. Can anyone suggest a method of ensuring that I capture in the output all the <a> elements from either file
+
+David offers this gem, the Cumbrian Technique.
 
 
 ```xml
